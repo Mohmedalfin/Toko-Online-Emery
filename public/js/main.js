@@ -7,20 +7,20 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.classList.remove("hidden");
   });
 
-  closeBtn.addEventListener("click", () => {                               
+  closeBtn.addEventListener("click", () => {
     menu.classList.add("hidden");
   });
-});           
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const template = document.getElementById("nav-menu-template");
-  const desktop = document.getElementById("desktop-nav");                                             
+  const desktop = document.getElementById("desktop-nav");
   const mobile = document.getElementById("mobile-nav");
 
-  if (template && desktop && mobile) {                                                        
+  if (template && desktop && mobile) {
     const menuItems = template.content.cloneNode(true);
     const menuItemsClone = template.content.cloneNode(true);
-                                                               
+
     desktop.classList.add("ml-8", "flex", "items-center", "space-x-8");
     mobile.classList.add("flex-col");
 
@@ -90,3 +90,19 @@ function filterCards(category) {
     }
   });
 }
+
+// Search Produk
+const toggleBtn = document.getElementById("toggleSearchBar");
+const closeBtn = document.getElementById("closeSearchBar");
+const searchBar = document.getElementById("searchBar");
+
+toggleBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  searchBar.classList.remove("hidden");
+});
+
+closeBtn.addEventListener("click", function () {
+  searchBar.classList.add("hidden");
+});
+
+// Register/Login Form Toggle
