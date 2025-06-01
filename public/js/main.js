@@ -105,4 +105,41 @@ closeBtn.addEventListener("click", function () {
   searchBar.classList.add("hidden");
 });
 
-// Register/Login Form Toggle
+// ------------- Filter Mobile -------------------
+document.getElementById("openFilterBtn").addEventListener("click", function () {
+  document.getElementById("filterPanel").classList.remove("translate-x-full");
+  document.getElementById("filterPanel").classList.add("translate-x-0");
+  document.getElementById("filterBackdrop").classList.remove("opacity-0", "pointer-events-none");
+  document.getElementById("filterBackdrop").classList.add("opacity-100", "pointer-events-auto");
+});
+
+// Tutup filter (panel & backdrop)
+document.getElementById("closeFilterBtn").addEventListener("click", function () {
+  document.getElementById("filterPanel").classList.remove("translate-x-0");
+  document.getElementById("filterPanel").classList.add("translate-x-full");
+  document.getElementById("filterBackdrop").classList.remove("opacity-100", "pointer-events-auto");
+  document.getElementById("filterBackdrop").classList.add("opacity-0", "pointer-events-none");
+});
+
+// (Optional) Klik backdrop juga bisa menutup filter
+document.getElementById("filterBackdrop").addEventListener("click", function () {
+  document.getElementById("closeFilterBtn").click();
+});
+
+// Toggle dropdown untuk semua section filter
+document.querySelectorAll(".filter-toggle").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    const sectionId = btn.getAttribute("aria-controls");
+    const section = document.getElementById(sectionId);
+
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", !expanded);
+
+    section.classList.toggle("hidden");
+    const svg = btn.querySelector("svg");
+    if (svg) {
+      svg.classList.toggle("-rotate-180");
+      svg.classList.toggle("rotate-0");
+    }
+  });
+});
