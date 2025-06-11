@@ -32,6 +32,10 @@ $base_url = "/public"; // Ganti sesuai dengan root URL proyek kamu
     <template id="nav-menu-template">
         <div class="space-y-4 lg:flex lg:space-x-6 lg:space-y-0 items-center">
             <a href="#" class="block font-medium text-sm text-font_primary hover:text-primary">BERANDA</a>
+            <a href="#" class="block font-medium text-sm text-font_primary hover:text-primary">PHASMINA</a>
+            <a href="#" class="block font-medium text-sm text-font_primary hover:text-primary">INSTAN</a>
+            <a href="#" class="block font-medium text-sm text-font_primary hover:text-primary">BERGO</a>
+            <a href="#" class="block font-medium text-sm text-font_primary hover:text-primary">SYAR'I</a>
             <!-- Dropdown Menu -->
             <div class="group relative w-full lg:inline-block">
                 <button onclick="toggleDropdown('companyDropdown', 'companyIcon')"
@@ -67,8 +71,6 @@ $base_url = "/public"; // Ganti sesuai dengan root URL proyek kamu
                     <a href="#" class="block px-4 py-2 text-xs text-font_primary hover:bg-tertiary">SUPER PREMIUM</a>
                 </div>
             </div>
-            <!-- Static menu -->
-            <a href="#" class="block font-medium text-sm text-font_primary hover:text-primary">PRODUK</a>
         </div>
     </template>
 

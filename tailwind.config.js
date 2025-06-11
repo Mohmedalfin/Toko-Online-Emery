@@ -30,9 +30,12 @@ module.exports = {
         font_jingga: "#D88663",
       },
       zIndex: {
-        99: "99", // ✅ Tambahan untuk class z-99
+        99: "99", 
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"), // ✅ Plugin aspect ratio ditambahkan di sini
+  ],
 };

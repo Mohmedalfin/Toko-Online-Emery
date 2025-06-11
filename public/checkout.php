@@ -45,9 +45,9 @@ $base_url = "/public"; // Ganti sesuai dengan root URL proyek kamu
                                 </div>
 
                                 <!-- Logo Mobile  -->
-                                <div class="flex flex-1 items-center justify-start lg:hidden">
+                                <div class="flex flex-1 items-center justify-center lg:hidden">
                                     <a href="#">
-                                        <img src="/asset/img/image.png" class="h-12 w-auto" alt="Logo" />
+                                        <img src="/asset/img/image.png" class="h-20 w-auto" alt="Logo" />
                                     </a>
                                 </div>
                             </div>
