@@ -105,43 +105,58 @@ closeBtn.addEventListener("click", function () {
   searchBar.classList.add("hidden");
 });
 
-// ------------- Filter Mobile -------------------
-document.getElementById("openFilterBtn").addEventListener("click", function () {
-  document.getElementById("filterPanel").classList.remove("translate-x-full");
-  document.getElementById("filterPanel").classList.add("translate-x-0");
-  document.getElementById("filterBackdrop").classList.remove("opacity-0", "pointer-events-none");
-  document.getElementById("filterBackdrop").classList.add("opacity-100", "pointer-events-auto");
-});
 
-// Tutup filter (panel & backdrop)
-document.getElementById("closeFilterBtn").addEventListener("click", function () {
-  document.getElementById("filterPanel").classList.remove("translate-x-0");
-  document.getElementById("filterPanel").classList.add("translate-x-full");
-  document.getElementById("filterBackdrop").classList.remove("opacity-100", "pointer-events-auto");
-  document.getElementById("filterBackdrop").classList.add("opacity-0", "pointer-events-none");
-});
+// product page
+function toggleDisclosure(id, button) {
+    const content = document.getElementById(id);
+    const expanded = button.getAttribute("aria-expanded") === "true";
 
-// (Optional) Klik backdrop juga bisa menutup filter
-document.getElementById("filterBackdrop").addEventListener("click", function () {
-  document.getElementById("closeFilterBtn").click();
-});
+    button.setAttribute("aria-expanded", !expanded);
+    content.classList.toggle("hidden");
+    button.classList.toggle("open");
+  }
 
-// Toggle dropdown untuk semua section filter
-document.querySelectorAll(".filter-toggle").forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    const sectionId = btn.getAttribute("aria-controls");
-    const section = document.getElementById(sectionId);
+  //  Toggle dropdown untuk filter produk
+function toggleDropdown(id) {
+  const menu = document.getElementById(id);
+  const isHidden = menu.classList.contains("hidden");
 
-    const expanded = btn.getAttribute("aria-expanded") === "true";
-    btn.setAttribute("aria-expanded", !expanded);
+  if (isHidden) {
+    menu.classList.remove("hidden");
+    setTimeout(() => {
+      menu.classList.remove("opacity-0", "scale-95");
+      menu.classList.add("opacity-100", "scale-100");
+    }, 10);
+  } else {
+    menu.classList.remove("opacity-100", "scale-100");
+    menu.classList.add("opacity-0", "scale-95");
+    setTimeout(() => {
+      menu.classList.add("hidden");
+    }, 100);
+  }
+}
 
-    section.classList.toggle("hidden");
-    const svg = btn.querySelector("svg");
-    if (svg) {
-      svg.classList.toggle("-rotate-180");
-      svg.classList.toggle("rotate-0");
+
+// Price Range Slider
+ const minRange = document.getElementById("rangeMin");
+  const maxRange = document.getElementById("rangeMax");
+  const minPrice = document.getElementById("minPrice");
+  const maxPrice = document.getElementById("maxPrice");
+
+  function updateDisplay() {
+    const min = parseInt(minRange.value);
+    const max = parseInt(maxRange.value);
+    if (min > max) {
+      // Swap if out of order
+      [minRange.value, maxRange.value] = [max, min];
     }
-  });
-});
+    minPrice.value = parseInt(minRange.value).toLocaleString("id-ID");
+    maxPrice.value = parseInt(maxRange.value).toLocaleString("id-ID");
+  }
+
+  minRange.addEventListener("input", updateDisplay);
+  maxRange.addEventListener("input", updateDisplay);
+  updateDisplay();
 
 
+  

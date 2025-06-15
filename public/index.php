@@ -4,26 +4,23 @@ include 'komponen/header.php';
 
 <!-- Hero Section -->
 <section class="relative w-full overflow-hidden mt-16">
-    <div id="heroImageSlider" class="flex w-[100%] transition-transform duration-700 ease-in-out">
+    <div id="heroImageSlider" class="flex w-full transition-transform duration-700 ease-in-out">
         <div class="w-full flex-shrink-0 relative text-center">
             <picture data-aos="zoom-in" data-aos-duration="1000">
                 <source media="(min-width: 768px)" srcset="/asset/img/Hero1.webp" />
-                <img src="/asset/img/Hero-Mobile1.webp" alt="Hero" class="mx-auto block max-w-full"
-                    style="height: auto; width: auto;" />
+                <img src="/asset/img/Hero-Mobile1.webp" alt="Hero" class="w-full h-auto object-cover" />
             </picture>
         </div>
         <div class="w-full flex-shrink-0 relative text-center">
             <picture data-aos="zoom-in" data-aos-duration="1000">
                 <source media="(min-width: 768px)" srcset="/asset/img/Hero3.webp" />
-                <img src="/asset/img/Hero-Mobile1.webp" alt="Hero" class="mx-auto block max-w-full"
-                    style="height: auto; width: auto;" />
+                <img src="/asset/img/Hero-Mobile1.webp" alt="Hero" class="w-full h-auto object-cover" />
             </picture>
         </div>
         <div class="w-full flex-shrink-0 relative text-center">
             <picture data-aos="zoom-in" data-aos-duration="1000">
                 <source media="(min-width: 768px)" srcset="/asset/img/Hero2.webp" />
-                <img src="/asset/img/Hero-Mobile1.webp" alt="Hero" class="mx-auto block max-w-full"
-                    style="height: auto; width: auto;" />
+                <img src="/asset/img/Hero-Mobile1.webp" alt="Hero" class="w-full h-auto object-cover" />
             </picture>
         </div>
     </div>
@@ -31,215 +28,226 @@ include 'komponen/header.php';
 
 <!-- PRODUK UNGGULAN -->
 <section class="bestseller py-10 p-2">
-    <div class="text-center mb-6">
+    <div class="text-center mb-4">
         <h2 class="text-xl md:text-2xl font-medium text-primary">PRODUK UNGGULAN</h2>
         <div class="mt-2 space-x-4">
             <button onclick="filterCards('all')"
                 class="text-sm md:text-base font-medium text-gray-500 hover:text-primary">ALL</button>
             <button onclick="filterCards('instan')"
-                class="text-sm md:text-base font-medium text-gray-500 hover:text-primary">INSTAN</button>
+                class="text-sm md:text-base font-medium text-gray-500 hover:text-primary">STANDAR</button>
             <button onclick="filterCards('pashmina')"
-                class="text-sm md:text-base font-medium text-gray-500 hover:text-primary">PASHMINA</button>
+                class="text-sm md:text-base font-medium text-gray-500 hover:text-primary">PREMIUM</button>
             <button onclick="filterCards('bergo')"
-                class="text-sm md:text-base font-medium text-gray-500 hover:text-primary">BERGO</button>
+                class="text-sm md:text-base font-medium text-gray-500 hover:text-primary">SUPER</button>
         </div>
     </div>
 
-    <!-- Grid Produk -->
-    <div id="productGrid"
-        class="mx-auto grid grid-cols-2 md:grid-cols-4 gap-2 justify-center w-full max-w-screen-xl md:p-2">
-        <!-- Kartu Produk -->
-        <div class="product-card max-w-xs w-full rounded-xl overflow-hidden border shadow-sm bg-tertiary hover:shadow-md transition-shadow duration-300"
-            data-category="instan" data-aos="fade-up" data-aos-delay="100">
-            <!-- Gambar Produk -->
-            <div class="aspect-[3/4] w-full">
-                <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
-            </div>
+    <!-- Card Produk -->
+    <div class="py-8 p-2">
+        <div id="productGrid"
+            class="mx-auto max-w-screen-2xl grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4 place-items-center lg:px-4 xl:px-0">
 
-            <!-- Konten Produk -->
-            <div class="p-4 space-y-1">
-                <p class="font-medium text-sm md:text-lg text-font_primary">
-                    Pashmina Plisket – Pink Dusty
-                </p>
-                <p class="text-sm md:text-xl font-medium text-font_jingga">
-                    Rp. 200.000,-
-                </p>
-                <p class="font-medium text-font_jingga text-sm">
-                    Jenis : Premium
-                </p>
+            <!-- Kartu Produk -->
+            <div class="product-card w-full max-w-md rounded-2xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300"
+                data-category="instan">
 
-                <!-- Rating dan Tombol -->
-                <div class="flex items-center justify-between mt-2">
-                    <div class="flex items-center gap-1 text-sm text-font_primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <span>4.7</span>
+                <!-- Gambar Produk -->
+                <div class="spect-video w-full">
+                    <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
+                </div>
+
+                <!-- Konten Produk -->
+                <div class="p-4 space-y-1">
+                    <p class="font-medium text-sm md:text-lg text-font_primary">
+                        Pashmina Plisket – Pink Dusty
+                    </p>
+                    <p class="text-sm md:text-xl font-medium text-font_jingga">
+                        Rp. 200.000,-
+                    </p>
+                    <p class="font-medium text-font_jingga text-sm">
+                        Premium
+                    </p>
+
+                    <!-- Rating dan Tombol -->
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="flex items-center gap-1 text-sm text-font_primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <span>4.7</span>
+                        </div>
+
+                        <button class="text-font_jingga hover:text-rose-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
                     </div>
+                </div>
+            </div>
+            <!-- Kartu Produk -->
+            <div class="product-card w-full max-w-md rounded-2xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300"
+                data-category="pashmina">
 
-                    <button class="text-font_jingga hover:text-rose-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
+                <!-- Gambar Produk -->
+                <div class="spect-video w-full">
+                    <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
+                </div>
+
+                <!-- Konten Produk -->
+                <div class="p-4 space-y-1">
+                    <p class="font-medium text-sm md:text-lg text-font_primary">
+                        Pashmina Plisket – Pink Dusty
+                    </p>
+                    <p class="text-sm md:text-xl font-medium text-font_jingga">
+                        Rp. 200.000,-
+                    </p>
+                    <p class="font-medium text-font_jingga text-sm">
+                        Premium
+                    </p>
+
+                    <!-- Rating dan Tombol -->
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="flex items-center gap-1 text-sm text-font_primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <span>4.7</span>
+                        </div>
+
+                        <button class="text-font_jingga hover:text-rose-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Kartu Produk -->
+            <div class="product-card w-full max-w-md rounded-2xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300"
+                data-category="bergo">
+
+                <!-- Gambar Produk -->
+                <div class="spect-video w-full">
+                    <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
+                </div>
+
+                <!-- Konten Produk -->
+                <div class="p-4 space-y-1">
+                    <p class="font-medium text-sm md:text-lg text-font_primary">
+                        Pashmina Plisket – Pink Dusty
+                    </p>
+                    <p class="text-sm md:text-xl font-medium text-font_jingga">
+                        Rp. 200.000,-
+                    </p>
+                    <p class="font-medium text-font_jingga text-sm">
+                        Premium
+                    </p>
+
+                    <!-- Rating dan Tombol -->
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="flex items-center gap-1 text-sm text-font_primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <span>4.7</span>
+                        </div>
+
+                        <button class="text-font_jingga hover:text-rose-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Kartu Produk -->
+            <div class="product-card w-full max-w-md rounded-2xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300"
+                data-category="instan">
+
+                <!-- Gambar Produk -->
+                <div class="spect-video w-full">
+                    <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
+                </div>
+
+                <!-- Konten Produk -->
+                <div class="p-4 space-y-1">
+                    <p class="font-medium text-sm md:text-lg text-font_primary">
+                        Pashmina Plisket – Pink Dusty
+                    </p>
+                    <p class="text-sm md:text-xl font-medium text-font_jingga">
+                        Rp. 200.000,-
+                    </p>
+                    <p class="font-medium text-font_jingga text-sm">
+                        Premium
+                    </p>
+
+                    <!-- Rating dan Tombol -->
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="flex items-center gap-1 text-sm text-font_primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <span>4.7</span>
+                        </div>
+
+                        <button class="text-font_jingga hover:text-rose-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Kartu Produk -->
-        <div class="product-card max-w-xs w-full rounded-xl overflow-hidden border shadow-sm bg-tertiary hover:shadow-md transition-shadow duration-300"
-            data-category="pashmina" data-aos="fade-up" data-aos-delay="100">
-            <!-- Gambar Produk -->
-            <div class="aspect-[3/4] w-full">
-                <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
-            </div>
 
-            <!-- Konten Produk -->
-            <div class="p-4 space-y-1">
-                <p class="font-medium text-sm md:text-lg text-font_primary">
-                    Pashmina Plisket – Pink Dusty
-                </p>
-                <p class="text-sm md:text-xl font-medium text-font_jingga">
-                    Rp. 200.000,-
-                </p>
-                <p class="font-medium text-font_jingga text-sm">
-                    Jenis : Premium
-                </p>
-
-                <!-- Rating dan Tombol -->
-                <div class="flex items-center justify-between mt-2">
-                    <div class="flex items-center gap-1 text-sm text-font_primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <span>4.7</span>
-                    </div>
-
-                    <button class="text-font_jingga hover:text-rose-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+        <div class="text-center mt-8">
+            <a href="category_produk.php"
+                class="px-6 py-2 bg-secondary hover:bg-primary text-white rounded-xl font-medium transition inline-block">
+                Tampilkan semua
+            </a>
         </div>
-        <!-- Kartu Produk -->
-        <div class="product-card max-w-xs w-full rounded-xl overflow-hidden border shadow-sm bg-tertiary hover:shadow-md transition-shadow duration-300"
-            data-category="bergo" data-aos="fade-up" data-aos-delay="100">
-            <!-- Gambar Produk -->
-            <div class="aspect-[3/4] w-full">
-                <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
-            </div>
-
-            <!-- Konten Produk -->
-            <div class="p-4 space-y-1">
-                <p class="font-medium text-sm md:text-lg text-font_primary">
-                    Pashmina Plisket – Pink Dusty
-                </p>
-                <p class="text-sm md:text-xl font-medium text-font_jingga">
-                    Rp. 200.000,-
-                </p>
-                <p class="font-medium text-font_jingga text-sm">
-                    Jenis : Premium
-                </p>
-
-                <!-- Rating dan Tombol -->
-                <div class="flex items-center justify-between mt-2">
-                    <div class="flex items-center gap-1 text-sm text-font_primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <span>4.7</span>
-                    </div>
-
-                    <button class="text-font_jingga hover:text-rose-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Kartu Produk -->
-        <div class="product-card max-w-xs w-full rounded-xl overflow-hidden border shadow-sm bg-tertiary hover:shadow-md transition-shadow duration-300"
-            data-category="pashmina" data-aos="fade-up" data-aos-delay="100">
-            <!-- Gambar Produk -->
-            <div class="aspect-[3/4] w-full">
-                <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
-            </div>
-
-            <!-- Konten Produk -->
-            <div class="p-4 space-y-1">
-                <p class="font-medium text-sm md:text-lg text-font_primary">
-                    Pashmina Plisket – Pink Dusty
-                </p>
-                <p class="text-sm md:text-xl font-medium text-font_jingga">
-                    Rp. 200.000,-
-                </p>
-                <p class="font-medium text-font_jingga text-sm">
-                    Jenis : Premium
-                </p>
-
-                <!-- Rating dan Tombol -->
-                <div class="flex items-center justify-between mt-2">
-                    <div class="flex items-center gap-1 text-sm text-font_primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <span>4.7</span>
-                    </div>
-
-                    <button class="text-font_jingga hover:text-rose-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Tombol tampilkan semua -->
-    <div class="text-center mt-6">
-        <a href="category_produk.php"
-            class="px-6 py-2 bg-primary text-white rounded-xl font-medium transition inline-block">
-            Tampilkan semua
-        </a>
     </div>
 </section>
 
 <!-- PRODUK KE-1 -->
 <section class="relative w-full overflow-hidden">
-    <div class="flex w-[100%] transition-transform duration-700 ease-in-out">
+    <div class="flex w-full transition-transform duration-700 ease-in-out">
         <div class="w-full flex-shrink-0 relative text-center">
             <picture data-aos="zoom-in" data-aos-duration="1000">
                 <source media="(min-width: 768px)" srcset="/asset/img/Hero1.webp" />
-                <img src="/asset/img/Hero-Mobile1.webp" alt="Hero" class="mx-auto block max-w-full"
-                    style="height: auto; width: auto;" />
+                <img src="/asset/img/Hero-Mobile1.webp" alt="Hero" class="w-full h-auto object-cover" />
             </picture>
         </div>
     </div>
 
+    <!-- Card Produk -->
     <div class="py-10 p-2">
-        <!-- Grid Produk -->
         <div id="productGrid"
-            class="mx-auto grid grid-cols-2 md:grid-cols-4 gap-2 justify-center w-full max-w-screen-xl md:p-2">
+            class="mx-auto max-w-screen-2xl grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4 place-items-center lg:px-4 xl:px-0">
+
             <!-- Kartu Produk -->
-            <div class="product-card max-w-xs w-full rounded-xl overflow-hidden border shadow-sm bg-tertiary hover:shadow-md transition-shadow duration-300"
-                data-aos="fade-up" data-aos-delay="100">
+            <div
+                class="product-card w-full max-w-md rounded-2xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300">
+
                 <!-- Gambar Produk -->
-                <div class="aspect-[3/4] w-full">
+                <div class="spect-video w-full">
                     <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
                 </div>
 
@@ -252,7 +260,7 @@ include 'komponen/header.php';
                         Rp. 200.000,-
                     </p>
                     <p class="font-medium text-font_jingga text-sm">
-                        Jenis : Premium
+                        Premium
                     </p>
 
                     <!-- Rating dan Tombol -->
@@ -277,10 +285,11 @@ include 'komponen/header.php';
                 </div>
             </div>
             <!-- Kartu Produk -->
-            <div class="product-card max-w-xs w-full rounded-xl overflow-hidden border shadow-sm bg-tertiary hover:shadow-md transition-shadow duration-300"
-                data-aos="fade-up" data-aos-delay="100">
+            <div
+                class="product-card w-full max-w-md rounded-2xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300">
+
                 <!-- Gambar Produk -->
-                <div class="aspect-[3/4] w-full">
+                <div class="spect-video w-full">
                     <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
                 </div>
 
@@ -293,7 +302,7 @@ include 'komponen/header.php';
                         Rp. 200.000,-
                     </p>
                     <p class="font-medium text-font_jingga text-sm">
-                        Jenis : Premium
+                        Premium
                     </p>
 
                     <!-- Rating dan Tombol -->
@@ -318,10 +327,11 @@ include 'komponen/header.php';
                 </div>
             </div>
             <!-- Kartu Produk -->
-            <div class="product-card max-w-xs w-full rounded-xl overflow-hidden border shadow-sm bg-tertiary hover:shadow-md transition-shadow duration-300"
-                data-aos="fade-up" data-aos-delay="100">
+            <div
+                class="product-card w-full max-w-md rounded-2xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300">
+
                 <!-- Gambar Produk -->
-                <div class="aspect-[3/4] w-full">
+                <div class="spect-video w-full">
                     <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
                 </div>
 
@@ -334,7 +344,7 @@ include 'komponen/header.php';
                         Rp. 200.000,-
                     </p>
                     <p class="font-medium text-font_jingga text-sm">
-                        Jenis : Premium
+                        Premium
                     </p>
 
                     <!-- Rating dan Tombol -->
@@ -359,10 +369,11 @@ include 'komponen/header.php';
                 </div>
             </div>
             <!-- Kartu Produk -->
-            <div class="product-card max-w-xs w-full rounded-xl overflow-hidden border shadow-sm bg-tertiary hover:shadow-md transition-shadow duration-300"
-                data-aos="fade-up" data-aos-delay="100">
+            <div
+                class="product-card w-full max-w-md rounded-2xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300">
+
                 <!-- Gambar Produk -->
-                <div class="aspect-[3/4] w-full">
+                <div class="spect-video w-full">
                     <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
                 </div>
 
@@ -375,7 +386,7 @@ include 'komponen/header.php';
                         Rp. 200.000,-
                     </p>
                     <p class="font-medium text-font_jingga text-sm">
-                        Jenis : Premium
+                        Premium
                     </p>
 
                     <!-- Rating dan Tombol -->
@@ -401,12 +412,13 @@ include 'komponen/header.php';
             </div>
         </div>
 
-        <div class="text-center mt-6">
-            <button href="kategori/category_produk.html"
-                class="px-6 py-2 bg-primary text-white rounded-xl font-medium transition">
+        <div class="text-center mt-8">
+            <a href="category_produk.php"
+                class="px-6 py-2 bg-secondary hover:bg-primary text-white rounded-xl font-medium transition inline-block">
                 Tampilkan semua
-            </button>
+            </a>
         </div>
+
     </div>
 </section>
 <!-- END PRODUK KE 1 -->
@@ -418,7 +430,7 @@ include 'komponen/header.php';
         <div aria-hidden="true" class="absolute inset-0 hidden sm:flex sm:flex-col">
             <div class="relative w-full flex-1 bg-gray-800">
                 <div class="absolute inset-0 overflow-hidden">
-                    <img src="/asset/img/Hero1.webp" alt="" class="h-full w-full object-cover object-center">
+                    <img src="/asset/H_CATEGORI.webp" alt="" class="h-full w-full object-cover object-center">
                 </div>
                 <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
             </div>
@@ -430,19 +442,14 @@ include 'komponen/header.php';
             <div aria-hidden="true" class="absolute inset-0 flex flex-col sm:hidden">
                 <div class="relative w-full flex-1 bg-gray-800">
                     <div class="absolute inset-0 overflow-hidden">
-                        <img src="/asset/img/Hero1.webp" alt="" class="h-full w-full object-cover object-center">
+                        <img src="/asset/H_CATEGORI.webp" alt="" class="h-full w-full object-cover object-center">
                     </div>
                     <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
                 </div>
                 <div class="h-48 w-full bg-white"></div>
             </div>
             <div class="relative py-32">
-                <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Mid-Season Sale</h1>
-                <div class="mt-4 sm:mt-6">
-                    <a href="#"
-                        class="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 font-medium text-white hover:bg-indigo-700">Shop
-                        Collection</a>
-                </div>
+                <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Category Produk</h1>
             </div>
         </div>
 
@@ -464,7 +471,7 @@ include 'komponen/header.php';
                                 <h3 class="mt-1 font-semibold text-white">
                                     <a href="#">
                                         <span class="absolute inset-0"></span>
-                                        Women&#039;s
+                                        STANDAR
                                     </a>
                                 </h3>
                             </div>
@@ -486,7 +493,7 @@ include 'komponen/header.php';
                                 <h3 class="mt-1 font-semibold text-white">
                                     <a href="#">
                                         <span class="absolute inset-0"></span>
-                                        Men&#039;s
+                                        PREMIUM
                                     </a>
                                 </h3>
                             </div>
@@ -509,7 +516,7 @@ include 'komponen/header.php';
                                 <h3 class="mt-1 font-semibold text-white">
                                     <a href="#">
                                         <span class="absolute inset-0"></span>
-                                        Desk Accessories
+                                        SUPER
                                     </a>
                                 </h3>
                             </div>
@@ -520,7 +527,6 @@ include 'komponen/header.php';
         </section>
     </div>
 </section>
-
 <!-- END CATEGORI -->
 
 

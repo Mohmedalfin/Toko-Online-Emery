@@ -31,7 +31,7 @@ $base_url = "/public"; // Ganti sesuai dengan root URL proyek kamu
 <body class="font-poppins bg-white">
     <template id="nav-menu-template">
         <div class="space-y-4 lg:flex lg:space-x-6 lg:space-y-0 items-center">
-            <a href="#" class="block font-medium text-sm text-font_primary hover:text-primary">BERANDA</a>
+            <a href="index.php" class="block font-medium text-sm text-font_primary hover:text-primary">BERANDA</a>
             <a href="#" class="block font-medium text-sm text-font_primary hover:text-primary">PHASMINA</a>
             <a href="#" class="block font-medium text-sm text-font_primary hover:text-primary">INSTAN</a>
             <a href="#" class="block font-medium text-sm text-font_primary hover:text-primary">BERGO</a>
@@ -167,7 +167,7 @@ $base_url = "/public"; // Ganti sesuai dengan root URL proyek kamu
                                             </div>
 
                                             <div class="flex">
-                                                <a href="./login.html"
+                                                <a href="./login.php"
                                                     class="-m-2 p-2 text-gray-400 hover:text-gray-500">
                                                     <span class="sr-only">Account</span>
                                                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"

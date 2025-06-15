@@ -32,10 +32,30 @@ module.exports = {
       zIndex: {
         99: "99", 
       },
+      spacing: {
+        '4': '16px',
+        '8': '32px', 
+        '12': '48px', 
+        '16': '64px',
+        '20': '80px',
+        '22': '88px',
+        '24': '96px',
+        '26': '104px',
+        '27': '108px',
+        '30': '120px',
+      },
     },
   },
   plugins: [
     require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"), // ✅ Plugin aspect ratio ditambahkan di sini
+    require('@tailwindcss/typography'),
+    require("@tailwindcss/aspect-ratio"), 
+     function ({ addUtilities }) {
+      addUtilities({
+        '.place-items-center': {
+          'place-items': 'center',
+        },
+      })
+    }
   ],
 };
