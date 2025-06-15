@@ -105,11 +105,12 @@ $base_url = "/public"; // Ganti sesuai dengan root URL proyek kamu
                     <!-- Top bar -->
                     <div class="bg-secondary hidden lg:block">
                         <div class="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-                            <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:space-x-6">
-                                <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Create an
+                            <div class="hidden lg:flex lg:flex-1 lg:justify-center lg:space-x-6">
+                                <!-- <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Create an
                                     account</a>
-                                <span class="h-6 w-px bg-gray-600" aria-hidden="true"></span>
-                                <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Sign in</a>
+                                <span class="h-6 w-px bg-gray-600" aria-hidden="true"></span> -->
+                                <a href="#" class="text-sm font-medium text-white hover:text-gray-100">GRACE IN MODESTY,
+                                    WITH TOKO EMERY.</a>
                             </div>
                         </div>
                     </div>

@@ -32,6 +32,15 @@ module.exports = {
       zIndex: {
         99: "99", 
       },
+      fontSize: {
+      'base-xxs': '11px',
+      'base-lg': '18px',
+      'base': '16px',
+      'base-xl': '20px',
+      'base-2xl': '24px',
+      'base-3xl': '30px',
+      'base-4xl': '36px',
+      },
       spacing: {
         '4': '16px',
         '8': '32px', 
@@ -50,10 +59,14 @@ module.exports = {
     require("@tailwindcss/forms"),
     require('@tailwindcss/typography'),
     require("@tailwindcss/aspect-ratio"), 
+    require('@tailwindcss/line-clamp'),
      function ({ addUtilities }) {
       addUtilities({
         '.place-items-center': {
           'place-items': 'center',
+        },
+        '.text-upper': {
+          textTransform: 'uppercase',
         },
       })
     }

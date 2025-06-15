@@ -46,7 +46,8 @@ include 'komponen/header.php';
 
                     <!-- Product info -->
                     <div class="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
-                        <h1 class="text-3xl font-bold tracking-tight text-font_primary"> Pashmina Plisket – Pink Dusty
+                        <h1 class="text-base-lg font-bold tracking-tight text-font_primary"> Pashmina Plisket – Pink
+                            Dusty
                         </h1>
 
                         <div class="mt-3">
@@ -92,8 +93,12 @@ include 'komponen/header.php';
                                             dilengkapi dengan plat L terbaru khas elzatta yang menambah keanggunan
                                             outfit sehari-hari.</p>
 
+                                        <div class="max-w-xl my-4">
+                                            <img src="../asset/img/size_hijab.webp" alt="Scarf Voal Liza - Elzatta"
+                                                class="w-full shadow" />
+                                        </div>
+
                                         <ul class="max-w-xl text-base text-font_primary">
-                                            <li>Size : 120 X 120 cm</li>
                                             <li>Tipe : Premium</li>
                                             <li>Include : Plat Round Diamond</li>
                                         </ul>

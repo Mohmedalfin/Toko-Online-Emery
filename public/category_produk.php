@@ -133,8 +133,8 @@ include 'komponen/header.php';
             class="mx-auto max-w-screen-2xl grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4 place-items-center lg:px-4 xl:px-0">
 
             <!-- Kartu Produk -->
-            <div
-                class="product-card w-full max-w-md rounded-2xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300">
+            <div data-aos="fade-up"
+                class="product-card cursor-pointer w-full max-w-md rounded-xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300">
 
                 <!-- Gambar Produk -->
                 <div class="spect-video w-full">
@@ -143,11 +143,12 @@ include 'komponen/header.php';
 
                 <!-- Konten Produk -->
                 <div class="p-4 space-y-1">
-                    <p class="font-medium text-sm md:text-lg text-font_primary">
+                    <p
+                        class="font-medium text-base-xxs md:text-sm text-sm md:text-lg text-font_primary text-upper line-clamp-2">
                         Pashmina Plisket – Pink Dusty
                     </p>
-                    <p class="text-sm md:text-xl font-medium text-font_jingga">
-                        Rp. 200.000,-
+                    <p class="text-sm md:text-sm font-medium text-font_jingga">
+                        RP. 200.000,-
                     </p>
                     <p class="font-medium text-font_jingga text-sm">
                         Premium
@@ -175,8 +176,8 @@ include 'komponen/header.php';
                 </div>
             </div>
             <!-- Kartu Produk -->
-            <div
-                class="product-card w-full max-w-md rounded-2xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300">
+            <div data-aos="fade-up"
+                class="product-card cursor-pointer w-full max-w-md rounded-xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300">
 
                 <!-- Gambar Produk -->
                 <div class="spect-video w-full">
@@ -185,11 +186,12 @@ include 'komponen/header.php';
 
                 <!-- Konten Produk -->
                 <div class="p-4 space-y-1">
-                    <p class="font-medium text-sm md:text-lg text-font_primary">
+                    <p
+                        class="font-medium text-base-xxs md:text-sm text-sm md:text-lg text-font_primary text-upper line-clamp-2">
                         Pashmina Plisket – Pink Dusty
                     </p>
-                    <p class="text-sm md:text-xl font-medium text-font_jingga">
-                        Rp. 200.000,-
+                    <p class="text-sm md:text-sm font-medium text-font_jingga">
+                        RP. 200.000,-
                     </p>
                     <p class="font-medium text-font_jingga text-sm">
                         Premium
@@ -217,8 +219,8 @@ include 'komponen/header.php';
                 </div>
             </div>
             <!-- Kartu Produk -->
-            <div
-                class="product-card w-full max-w-md rounded-2xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300">
+            <div data-aos="fade-up"
+                class="product-card cursor-pointer w-full max-w-md rounded-xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300">
 
                 <!-- Gambar Produk -->
                 <div class="spect-video w-full">
@@ -227,11 +229,12 @@ include 'komponen/header.php';
 
                 <!-- Konten Produk -->
                 <div class="p-4 space-y-1">
-                    <p class="font-medium text-sm md:text-lg text-font_primary">
+                    <p
+                        class="font-medium text-base-xxs md:text-sm text-sm md:text-lg text-font_primary text-upper line-clamp-2">
                         Pashmina Plisket – Pink Dusty
                     </p>
-                    <p class="text-sm md:text-xl font-medium text-font_jingga">
-                        Rp. 200.000,-
+                    <p class="text-sm md:text-sm font-medium text-font_jingga">
+                        RP. 200.000,-
                     </p>
                     <p class="font-medium text-font_jingga text-sm">
                         Premium
@@ -259,8 +262,8 @@ include 'komponen/header.php';
                 </div>
             </div>
             <!-- Kartu Produk -->
-            <div
-                class="product-card w-full max-w-md rounded-2xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300">
+            <div data-aos="fade-up"
+                class="product-card cursor-pointer w-full max-w-md rounded-xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300">
 
                 <!-- Gambar Produk -->
                 <div class="spect-video w-full">
@@ -269,11 +272,12 @@ include 'komponen/header.php';
 
                 <!-- Konten Produk -->
                 <div class="p-4 space-y-1">
-                    <p class="font-medium text-sm md:text-lg text-font_primary">
+                    <p
+                        class="font-medium text-base-xxs md:text-sm text-sm md:text-lg text-font_primary text-upper line-clamp-2">
                         Pashmina Plisket – Pink Dusty
                     </p>
-                    <p class="text-sm md:text-xl font-medium text-font_jingga">
-                        Rp. 200.000,-
+                    <p class="text-sm md:text-sm font-medium text-font_jingga">
+                        RP. 200.000,-
                     </p>
                     <p class="font-medium text-font_jingga text-sm">
                         Premium

@@ -1625,6 +1625,11 @@ select {
   margin-right: auto;
 }
 
+.my-4 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
 .-ml-2 {
   margin-left: -0.5rem;
 }
@@ -1723,6 +1728,13 @@ select {
 
 .mt-8 {
   margin-top: 32px;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .block {
@@ -2483,8 +2495,15 @@ select {
 }
 
 .text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+}
+
+.text-base-lg {
+  font-size: 18px;
+}
+
+.text-base-xxs {
+  font-size: 11px;
 }
 
 .text-lg {
@@ -2742,8 +2761,19 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .place-items-center {
   place-items: center;
+}
+
+.text-upper {
+  text-transform: uppercase;
 }
 
 /* Custom slider thumb */
@@ -3203,13 +3233,17 @@ input[type="range"].range-thumb::-moz-range-thumb {
   }
 
   .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 16px;
   }
 
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:text-xl {
@@ -3308,8 +3342,8 @@ input[type="range"].range-thumb::-moz-range-thumb {
     align-items: center;
   }
 
-  .lg\:justify-end {
-    justify-content: flex-end;
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:gap-4 {
@@ -3403,3 +3437,4 @@ input[type="range"].range-thumb::-moz-range-thumb {
     padding-right: 0px;
   }
 }
+
