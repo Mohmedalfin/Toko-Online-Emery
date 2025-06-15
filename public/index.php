@@ -27,7 +27,7 @@ include 'komponen/header.php';
 </section>
 
 <!-- PRODUK UNGGULAN -->
-<section class="bestseller py-10">
+<section class="bestseller py-8 md:py-10">
     <div class="text-center mb-4">
         <h2 class="text-xl md:text-2xl font-medium text-primary">PRODUK UNGGULAN</h2>
         <div class="mt-2 space-x-4">
@@ -43,7 +43,7 @@ include 'komponen/header.php';
     </div>
 
     <!-- Card Produk -->
-    <div class="py-8 p-2">
+    <div class="py-4 p-2">
         <div id="productGrid"
             class="mx-auto max-w-screen-2xl grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4 place-items-center lg:px-4 xl:px-0">
 
@@ -59,14 +59,13 @@ include 'komponen/header.php';
 
                 <!-- Konten Produk -->
                 <div class="p-4 space-y-1">
-                    <p
-                        class="font-medium text-base-xxs md:text-sm text-sm md:text-lg text-font_primary text-upper line-clamp-2">
+                    <p class="font-medium text-base-xxs md:text-sm  text-font_primary text-upper line-clamp-2">
                         Pashmina Plisket – Pink Dusty
                     </p>
-                    <p class="text-sm md:text-sm font-medium text-font_jingga">
+                    <p class="text-base-xxs md:text-sm font-medium text-font_jingga">
                         RP. 200.000,-
                     </p>
-                    <p class="font-medium text-font_jingga text-sm">
+                    <p class="font-medium text-font_jingga text-base-xxs md:text-sm">
                         Premium
                     </p>
 
@@ -83,8 +82,8 @@ include 'komponen/header.php';
 
                         <button onclick="event.stopPropagation(); openQuickView('P001')"
                             class="text-font_jingga hover:text-rose-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
@@ -104,14 +103,13 @@ include 'komponen/header.php';
 
                 <!-- Konten Produk -->
                 <div class="p-4 space-y-1">
-                    <p
-                        class="font-medium text-base-xxs md:text-sm text-sm md:text-lg text-font_primary text-upper line-clamp-2">
+                    <p class="font-medium text-base-xxs md:text-sm  text-font_primary text-upper line-clamp-2">
                         Pashmina Plisket – Pink Dusty
                     </p>
-                    <p class="text-sm md:text-sm font-medium text-font_jingga">
+                    <p class="text-base-xxs md:text-sm font-medium text-font_jingga">
                         RP. 200.000,-
                     </p>
-                    <p class="font-medium text-font_jingga text-sm">
+                    <p class="font-medium text-font_jingga text-base-xxs md:text-sm">
                         Premium
                     </p>
 
@@ -128,8 +126,8 @@ include 'komponen/header.php';
 
                         <button onclick="event.stopPropagation(); openQuickView('P001')"
                             class="text-font_jingga hover:text-rose-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
@@ -149,14 +147,13 @@ include 'komponen/header.php';
 
                 <!-- Konten Produk -->
                 <div class="p-4 space-y-1">
-                    <p
-                        class="font-medium text-base-xxs md:text-sm text-sm md:text-lg text-font_primary text-upper line-clamp-2">
+                    <p class="font-medium text-base-xxs md:text-sm  text-font_primary text-upper line-clamp-2">
                         Pashmina Plisket – Pink Dusty
                     </p>
-                    <p class="text-sm md:text-sm font-medium text-font_jingga">
+                    <p class="text-base-xxs md:text-sm font-medium text-font_jingga">
                         RP. 200.000,-
                     </p>
-                    <p class="font-medium text-font_jingga text-sm">
+                    <p class="font-medium text-font_jingga text-base-xxs md:text-sm">
                         Premium
                     </p>
 
@@ -173,8 +170,8 @@ include 'komponen/header.php';
 
                         <button onclick="event.stopPropagation(); openQuickView('P001')"
                             class="text-font_jingga hover:text-rose-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
@@ -194,14 +191,13 @@ include 'komponen/header.php';
 
                 <!-- Konten Produk -->
                 <div class="p-4 space-y-1">
-                    <p
-                        class="font-medium text-base-xxs md:text-sm text-sm md:text-lg text-font_primary text-upper line-clamp-2">
+                    <p class="font-medium text-base-xxs md:text-sm  text-font_primary text-upper line-clamp-2">
                         Pashmina Plisket – Pink Dusty
                     </p>
-                    <p class="text-sm md:text-sm font-medium text-font_jingga">
+                    <p class="text-base-xxs md:text-sm font-medium text-font_jingga">
                         RP. 200.000,-
                     </p>
-                    <p class="font-medium text-font_jingga text-sm">
+                    <p class="font-medium text-font_jingga text-base-xxs md:text-sm">
                         Premium
                     </p>
 
@@ -218,8 +214,8 @@ include 'komponen/header.php';
 
                         <button onclick="event.stopPropagation(); openQuickView('P001')"
                             class="text-font_jingga hover:text-rose-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
@@ -227,7 +223,50 @@ include 'komponen/header.php';
                     </div>
                 </div>
             </div>
+            <!-- Kartu Produk -->
+            <div data-aos="fade-up"
+                class="product-card cursor-pointer w-full max-w-md rounded-xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300"
+                data-category="instan" onclick="window.location.href='product_page.php'">
 
+                <!-- Gambar Produk -->
+                <div class="spect-video w-full">
+                    <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
+                </div>
+
+                <!-- Konten Produk -->
+                <div class="p-4 space-y-1">
+                    <p class="font-medium text-base-xxs md:text-sm  text-font_primary text-upper line-clamp-2">
+                        Pashmina Plisket – Pink Dusty
+                    </p>
+                    <p class="text-base-xxs md:text-sm font-medium text-font_jingga">
+                        RP. 200.000,-
+                    </p>
+                    <p class="font-medium text-font_jingga text-base-xxs md:text-sm">
+                        Premium
+                    </p>
+
+                    <!-- Rating dan Tombol -->
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="flex items-center gap-1 text-sm text-font_primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <span>4.7</span>
+                        </div>
+
+                        <button onclick="event.stopPropagation(); openQuickView('P001')"
+                            class="text-font_jingga hover:text-rose-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="text-center mt-8">
@@ -267,14 +306,13 @@ include 'komponen/header.php';
 
                 <!-- Konten Produk -->
                 <div class="p-4 space-y-1">
-                    <p
-                        class="font-medium text-base-xxs md:text-sm text-sm md:text-lg text-font_primary text-upper line-clamp-2">
+                    <p class="font-medium text-base-xxs md:text-sm  text-font_primary text-upper line-clamp-2">
                         Pashmina Plisket – Pink Dusty
                     </p>
-                    <p class="text-sm md:text-sm font-medium text-font_jingga">
+                    <p class="text-base-xxs md:text-sm font-medium text-font_jingga">
                         RP. 200.000,-
                     </p>
-                    <p class="font-medium text-font_jingga text-sm">
+                    <p class="font-medium text-font_jingga text-base-xxs md:text-sm">
                         Premium
                     </p>
 
@@ -291,8 +329,8 @@ include 'komponen/header.php';
 
                         <button onclick="event.stopPropagation(); openQuickView('P001')"
                             class="text-font_jingga hover:text-rose-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
@@ -312,14 +350,13 @@ include 'komponen/header.php';
 
                 <!-- Konten Produk -->
                 <div class="p-4 space-y-1">
-                    <p
-                        class="font-medium text-base-xxs md:text-sm text-sm md:text-lg text-font_primary text-upper line-clamp-2">
+                    <p class="font-medium text-base-xxs md:text-sm  text-font_primary text-upper line-clamp-2">
                         Pashmina Plisket – Pink Dusty
                     </p>
-                    <p class="text-sm md:text-sm font-medium text-font_jingga">
+                    <p class="text-base-xxs md:text-sm font-medium text-font_jingga">
                         RP. 200.000,-
                     </p>
-                    <p class="font-medium text-font_jingga text-sm">
+                    <p class="font-medium text-font_jingga text-base-xxs md:text-sm">
                         Premium
                     </p>
 
@@ -336,8 +373,8 @@ include 'komponen/header.php';
 
                         <button onclick="event.stopPropagation(); openQuickView('P001')"
                             class="text-font_jingga hover:text-rose-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
@@ -357,14 +394,13 @@ include 'komponen/header.php';
 
                 <!-- Konten Produk -->
                 <div class="p-4 space-y-1">
-                    <p
-                        class="font-medium text-base-xxs md:text-sm text-sm md:text-lg text-font_primary text-upper line-clamp-2">
+                    <p class="font-medium text-base-xxs md:text-sm  text-font_primary text-upper line-clamp-2">
                         Pashmina Plisket – Pink Dusty
                     </p>
-                    <p class="text-sm md:text-sm font-medium text-font_jingga">
+                    <p class="text-base-xxs md:text-sm font-medium text-font_jingga">
                         RP. 200.000,-
                     </p>
-                    <p class="font-medium text-font_jingga text-sm">
+                    <p class="font-medium text-font_jingga text-base-xxs md:text-sm">
                         Premium
                     </p>
 
@@ -381,8 +417,8 @@ include 'komponen/header.php';
 
                         <button onclick="event.stopPropagation(); openQuickView('P001')"
                             class="text-font_jingga hover:text-rose-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
@@ -402,14 +438,13 @@ include 'komponen/header.php';
 
                 <!-- Konten Produk -->
                 <div class="p-4 space-y-1">
-                    <p
-                        class="font-medium text-base-xxs md:text-sm text-sm md:text-lg text-font_primary text-upper line-clamp-2">
+                    <p class="font-medium text-base-xxs md:text-sm  text-font_primary text-upper line-clamp-2">
                         Pashmina Plisket – Pink Dusty
                     </p>
-                    <p class="text-sm md:text-sm font-medium text-font_jingga">
+                    <p class="text-base-xxs md:text-sm font-medium text-font_jingga">
                         RP. 200.000,-
                     </p>
-                    <p class="font-medium text-font_jingga text-sm">
+                    <p class="font-medium text-font_jingga text-base-xxs md:text-sm">
                         Premium
                     </p>
 
@@ -426,8 +461,52 @@ include 'komponen/header.php';
 
                         <button onclick="event.stopPropagation(); openQuickView('P001')"
                             class="text-font_jingga hover:text-rose-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Kartu Produk -->
+            <div data-aos="fade-up"
+                class="product-card cursor-pointer w-full max-w-md rounded-xl overflow-hidden border border-gray-200 shadow hover:shadow-lg bg-tertiary transition-shadow duration-300"
+                data-category="instan" onclick="window.location.href='product_page.php'">
+
+                <!-- Gambar Produk -->
+                <div class="spect-video w-full">
+                    <img src="../asset/img/H1.jpg" alt="Pashmina Plisket" class="w-full h-full object-cover" />
+                </div>
+
+                <!-- Konten Produk -->
+                <div class="p-4 space-y-1">
+                    <p class="font-medium text-base-xxs md:text-sm  text-font_primary text-upper line-clamp-2">
+                        Pashmina Plisket – Pink Dusty
+                    </p>
+                    <p class="text-base-xxs md:text-sm font-medium text-font_jingga">
+                        RP. 200.000,-
+                    </p>
+                    <p class="font-medium text-font_jingga text-base-xxs md:text-sm">
+                        Premium
+                    </p>
+
+                    <!-- Rating dan Tombol -->
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="flex items-center gap-1 text-sm text-font_primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <span>4.7</span>
+                        </div>
+
+                        <button onclick="event.stopPropagation(); openQuickView('P001')"
+                            class="text-font_jingga hover:text-rose-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>

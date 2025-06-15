@@ -34,7 +34,7 @@ module.exports = {
         100: "100",
       },
       fontSize: {
-      'base-xxs': '11px',
+      'base-xxs': '12px',
       'base-lg': '18px',
       'base': '16px',
       'base-xl': '20px',
