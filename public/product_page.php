@@ -3,19 +3,32 @@ include 'komponen/header.php';
 ?>
 
 
-<section class="mt-20">
+<section class="mt-16 md:mt-20">
     <div class="bg-white">
         <main class="mx-auto max-w-7xl sm:px-6 sm:pt-16 lg:px-8">
             <div class="mx-auto max-w-2xl lg:max-w-none">
                 <!-- Product -->
-                <div class="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
+                <div class="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-14">
                     <!-- Image gallery -->
                     <div class="flex flex-col-reverse">
                         <!-- Image selector -->
                         <div class="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
                             <div class="grid grid-cols-4 gap-6" aria-orientation="horizontal" role="tablist">
                                 <button id="tabs-2-tab-1"
-                                    class="relative flex h-30 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-secondary focus:ring-opacity-50 focus:ring-offset-4"
+                                    class="relative flex h-32 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-secondary focus:ring-opacity-50 focus:ring-offset-4"
+                                    aria-controls="tabs-2-panel-1" role="tab" type="button">
+                                    <span class="sr-only">Angled view</span>
+                                    <span class="absolute inset-0 overflow-hidden rounded-md">
+                                        <img src="../../asset/img/H1.jpg" alt=""
+                                            class="h-full w-full object-cover object-center">
+                                    </span>
+                                    <!-- Selected: "ring-indigo-500", Not Selected: "ring-transparent" -->
+                                    <span
+                                        class="pointer-events-none absolute inset-0 rounded-md ring-2 ring-transparent ring-offset-2"
+                                        aria-hidden="true"></span>
+                                </button>
+                                <button id="tabs-2-tab-1"
+                                    class="relative flex h-32 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-secondary focus:ring-opacity-50 focus:ring-offset-4"
                                     aria-controls="tabs-2-panel-1" role="tab" type="button">
                                     <span class="sr-only">Angled view</span>
                                     <span class="absolute inset-0 overflow-hidden rounded-md">
@@ -46,13 +59,15 @@ include 'komponen/header.php';
 
                     <!-- Product info -->
                     <div class="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
-                        <h1 class="text-base-lg font-bold tracking-tight text-font_primary"> Pashmina Plisket – Pink
+                        <h1 class="text-base-xl md:text-base-2xl font-bold tracking-tight text-font_primary">
+                            Pashmina
+                            Plisket – Pink
                             Dusty
                         </h1>
 
-                        <div class="mt-3">
+                        <div class="mt-1">
                             <h2 class="sr-only">Product information</h2>
-                            <p class="text-3xl tracking-tight text-font_jingga">Rp. 150.000</p>
+                            <p class="text-base-xl md:text-base-2xl tracking-tight text-font_jingga">Rp. 150.000</p>
                         </div>
 
                         <section aria-labelledby="details-heading" class="mt-8">
@@ -120,7 +135,7 @@ include 'komponen/header.php';
                         <div
                             class="mt-3 inline-flex items-center border rounded-md bg-tertiary text-gray-500 text-lg px-6 py-2 gap-4 select-none">
                             <button onclick="decreaseQty()" class="hover:text-secondary">−</button>
-                            <span id="quantity" class="font-medium">2</span>
+                            <span id="quantity" class="font-medium text-primary">2</span>
                             <button onclick="increaseQty()" class="hover:text-secondary">+</button>
                         </div>
 
@@ -144,7 +159,7 @@ include 'komponen/header.php';
                     </div>
                 </div>
 
-                <section aria-labelledby="related-heading" class="mt-10 border-t border-gray-200 px-4 py-16 sm:px-0">
+                <section aria-labelledby="related-heading" class="mt-10 border-t border-gray-200 px-2 py-16 sm:px-0">
                     <h2 id="related-heading" class="text-xl font-bold text-gray-900">Customers also bought</h2>
 
                     <div class="py-8">

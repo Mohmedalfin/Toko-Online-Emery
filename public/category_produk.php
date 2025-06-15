@@ -18,9 +18,9 @@ include 'komponen/header.php';
 <!-- Filter Button -->
 <section>
     <div class="bg-white">
-        <div class="px-4 py-16 text-start sm:px-6 lg:px-8">
+        <div class="px-4 py-16 text-center sm:px-6 lg:px-8">
             <h1 class="text-4xl font-bold tracking-tight text-font_jingga">Alayya Set</h1>
-            <p class="mt-4 max-w-xl text-base text-gray-500">The secret to a tidy desk? Don't get rid of
+            <p class="mt-4 max-w-4xl text-base text-gray-500">The secret to a tidy desk? Don't get rid of
                 anything, just put it in really really nice looking containers.</p>
         </div>
 
@@ -304,6 +304,7 @@ include 'komponen/header.php';
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

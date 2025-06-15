@@ -129,19 +129,21 @@ $base_url = "/public"; // Ganti sesuai dengan root URL proyek kamu
 
 <!-- Keranjang -->
 <div id="cart-slide-over-container" class="hidden"></div>
+<div id="quickview-container"></div>
 
 <script src="js/main.js" defer></script>
 <script src="js/hamper.js" defer></script>
+<script src="js/quickviews.js" defer></script>
 
 <!-- AOS Animasi -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    AOS.init({
-        duration: 800,
-        once: true
+    document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+            duration: 800,
+            once: true
+        });
     });
-});
 </script>
 
 </body>

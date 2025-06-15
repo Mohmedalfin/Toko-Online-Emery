@@ -31,6 +31,7 @@ module.exports = {
       },
       zIndex: {
         99: "99", 
+        100: "100",
       },
       fontSize: {
       'base-xxs': '11px',
